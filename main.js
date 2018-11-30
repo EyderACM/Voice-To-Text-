@@ -19,6 +19,9 @@ recognition.addEventListener('result', e => {
         p = document.createElement('p');
         words.appendChild(p);
     }
+    if(transcript.includes('logro')){
+        window.alert('You got it');
+    }
     console.log(transcript);
 });
 
